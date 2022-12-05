@@ -1,0 +1,110 @@
+@import '../../../../../styles/colors.scss';
+
+.info {
+    width: 380px;
+    background-color: #fff;
+    height: 100%;
+    padding: 2.4rem 0;
+    box-shadow: -5px 0 40px -5px #4E614233;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__arrow {
+        background-color: rgba($color: #E6F4DC, $alpha: 0.8);
+        width: 32px;
+        height: 32px;
+        text-align: center;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+        line-height: 32px;
+        padding-right: 0.4rem;
+
+        &:hover {
+            background-color: #E6F4DC;
+            cursor: pointer;
+        }
+    }
+
+    &__content {
+        text-align: center;
+        margin: 1rem 0;
+
+        &-avatar {
+
+            img {
+                border-radius: 50%;
+            }
+        }
+
+
+        &-name {
+            font-size: 2.2rem;
+            color: #1E1F1F;
+            margin: 1.6rem 0;
+        }
+
+        &-job {
+            font-size: 2rem;
+            color: $main-color;
+        }
+
+        &-informations {
+            display: flex;
+            justify-content: space-around;
+            margin: 2.6rem 2rem 0;
+            position: relative;
+
+
+            .item {
+                min-width: 7.6rem;
+
+                h4 {
+                    font-size: 1.8rem;
+                    color: #A0A1A3;
+                    font-weight: 500;
+
+                }
+
+                p {
+                    font-size: 2rem;
+                    color: #1E1F1F;
+                    font-weight: 500;
+                    margin: 0;
+                }
+            }
+
+            &::after {
+                position: absolute;
+                content: "";
+                width: 2px;
+                height: 26px;
+                background-color: #D2D4D6;
+                right: 33%;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            &::before {
+                position: absolute;
+                content: "";
+                width: 2px;
+                height: 26px;
+                background-color: #D2D4D6;
+                left: 33%;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            .height {}
+
+        }
+
+        &-btn {
+            display: flex;
+            text-decoration: none !important;
+            width: 24rem;
+            margin: 3rem auto;
+        }
+    }
+}

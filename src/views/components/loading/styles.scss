@@ -1,0 +1,76 @@
+@import '../../../styles/colors.scss';
+
+.load-wrapp {
+    position: fixed;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .ring {
+        width: 60px;
+        height: 60px;
+        margin: 0 auto;
+        padding: 10px;
+        border: 9px dashed $main-color;
+        border-radius: 100%;
+        opacity: 1;
+        animation: loadingD 2s 0.4s cubic-bezier(0.17, 0.37, 0.43, 0.67) infinite;
+    }
+
+}
+
+@keyframes loadingD {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.donut {
+    width: 4rem;
+    height: 4rem;
+    margin: 2rem;
+    border-radius: 50%;
+    border: 0.3rem solid #F0F2F5;
+    border-top-color: #7db850;
+    animation: 1.5s spin infinite linear;
+  
+    &.multi {
+      border-bottom-color: #80bd52;
+    }
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .donut.small {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .donut.medium {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .donut.large { 
+    width: 5rem;
+    height: 5rem;
+  }

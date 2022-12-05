@@ -1,0 +1,124 @@
+@import '../../../styles/colors.scss';
+
+.slider {
+
+    .arrow {
+        display: flex;
+
+        &__item {
+            padding: 6px;
+            width: 34px;
+            height: 34px;
+            color: $main-color;
+            border: 1px solid;
+            margin: 0 4px;
+            opacity: 0.4;
+            border-radius: 4px;
+        }
+
+        &--action {
+            opacity: 1;
+            cursor: pointer;
+        }
+    }
+
+    &__interface {
+        overflow: hidden;
+        position: relative;
+        width: 70%;
+        margin: 0 auto;
+
+        .list {
+            display: flex;
+            transition: transform 1s ease-in-out 0s;
+
+            &__item {
+                flex: 1;
+                min-width: 100%;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .dots {
+            display: flex;
+            position: absolute;
+            bottom: 4px;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: all 1s ease-in-out 0s;
+
+            &__item {
+                height: 0.6rem;
+                background-color: $main-color;
+                opacity: 0.5;
+                border-radius: 50%;
+                margin: 0 0.5rem;
+                cursor: pointer;
+                animation: FadeDot ease 1s forwards;
+            }
+
+            &--active {
+                opacity: 1;
+                border-radius: 50px;
+                animation: FadeLine ease 1s forwards;
+            }
+
+            @keyframes FadeDot {
+                from {
+                    width: 3.2rem;
+                    border-radius: 50%;
+                }
+
+                to {
+                    width: 0.6rem;
+                    border-radius: 50px;
+                }
+            }
+
+            @keyframes FadeLine {
+                from {
+                    width: 0.6rem;
+                }
+
+                to {
+                    width: 3.2rem;
+                }
+            }
+        }
+    }
+
+
+    &__introduce {
+        transition: all 1s ease-in-out 0s;
+
+        &__logo {
+            margin: 1.4rem 0;
+        }
+
+        &__description {
+            font-size: 2rem;
+            color: $text-color;
+            display: none;
+        }
+
+        &--active {
+            display: block;
+            animation: Fade ease-in-out 1.2s;
+        }
+
+        @keyframes Fade {
+            from {
+                opacity: 0;
+                transform: translateY(6px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    }
+}

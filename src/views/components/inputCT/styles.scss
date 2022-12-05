@@ -1,0 +1,75 @@
+@import '../../../styles/colors.scss';
+
+.wrap {
+    &__label {
+        font-size: 1.4rem;
+        font-weight: 500;
+        margin-top: 6px;
+        margin-left: 2px;
+    }
+
+    &__input {
+        position: relative;
+
+        .input {
+            margin: 0;
+            padding: 0 10px 0 10px;
+            height: 42px;
+            border-radius: 8px;
+            background-color: #F5F7FA;
+            width: 100%;
+            font-size: 1.4rem;
+            font-weight: 100;
+            border: none;
+            outline: none;
+            color: #444;
+
+            &:focus {
+                outline: 1px solid $main-color ;
+            }
+        }
+
+        .border {
+            border: 1px solid $main-color;
+        }
+
+        .error {
+            border: 1px solid $error-color;
+        }
+
+        .input-eye {
+            position: absolute;
+            right: 1.6rem;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+
+            &__icon {
+                width: 1.8rem;
+                height: 1.8rem;
+            }
+        }
+
+        .unit {
+            position: absolute;
+            font-size: 1.4rem;
+            font-weight: 100;
+            color: #696A6B;
+            right: 1rem;
+            transform: translateY(-50%);
+            top: 50%;
+        }
+    }
+
+    input[type="password"]::-ms-reveal,
+    input[type="password"]::-ms-clear {
+        display: none;
+    }
+
+    &__feedback {
+        font-size: 1.3rem;
+        line-height: 13px;
+        min-height: 26px;
+        display: block;
+    }
+}

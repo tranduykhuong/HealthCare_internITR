@@ -1,0 +1,28 @@
+.navbarHR {
+  width: 220px;
+  padding: 14px;
+  display: block;
+  margin: 0;
+  border-right: 1px solid #ddd;
+
+  &__item {
+      font-size: 1.6rem;
+      color: #474748;
+      font-weight: 400;
+      text-decoration: none !important;
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin: 4px 0 0;
+      cursor: pointer;
+      border-radius: 4px;
+
+      &:hover {
+        background-color: #eef8e7;
+      }
+  }
+
+  &__item.active {
+      background-color: #E6F4DC;
+  }
+}

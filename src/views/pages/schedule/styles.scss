@@ -1,0 +1,116 @@
+@import '../../../styles/colors.scss';
+
+.my-schedule {
+    // background-image: url(../../../assets/images/jpg/bgIntroduce.jpg);
+    // background-repeat: none;
+    // background-size: cover;
+    // position: absolute;
+    // height: 100%;
+    // width: 100%;
+    // padding: 2.4rem;
+
+    background-color: #fff;
+    border-radius: 8px;
+    height: 93vh;
+    padding: 8px 0;
+
+    .heading {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 2.8rem;
+        color: $main-color;
+        margin: 1rem 0;
+    }
+
+    .content {
+        display: flex;
+        margin-top: 3rem;
+        justify-content: space-between;
+        padding: 0 2rem;
+
+        &--list {
+            display: block;
+            flex: 1;
+            background-color: #fff;
+            overflow: scroll;
+            overflow-x: hidden;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+
+            /* width */
+            &::-webkit-scrollbar {
+                width: 6px;
+            }
+
+            /* Track */
+            &::-webkit-scrollbar-track {
+                background: #f1f1f1;
+            }
+
+            /* Handle */
+            &::-webkit-scrollbar-thumb {
+                background: #9b9a9a;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+
+            /* Handle on hover */
+            &::-webkit-scrollbar-thumb:hover {
+                background: #555;
+            }
+        }
+
+        &__btn {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        &__list {
+            margin: 0 2rem;
+            max-height: 280px;
+
+            &-group {
+                margin: 0;
+
+                &:hover {
+                    background-color: $main-color;
+                    cursor: pointer;
+                }
+            }
+
+            &-item {
+                font-size: 1.6rem;
+                font-weight: 500;
+                list-style: none;
+                padding: 10px 20px;
+                border: 1px solid #ddd;
+                border-top: none;
+            }
+
+            &:first-child {
+                border-top: 1px solid #ddd;
+            }
+        }
+
+        .book-time {
+            margin-bottom: 1rem;
+        }
+
+        &__active {
+            max-height: 250px;
+        }
+
+        .disable {
+            background-color: #444;
+            color: #ddd;
+            cursor: inherit;
+        }
+
+        .hover {
+            background-color: $main-color;
+            cursor: pointer;
+        }
+    }
+}

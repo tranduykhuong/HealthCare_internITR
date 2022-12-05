@@ -1,0 +1,17 @@
+.layout {
+    background-color: #F5F5F5;
+    // height: 100vh;
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+
+    &__center {
+        padding: 1rem 2rem;
+        flex: 1;
+        margin-left: 240px;
+        margin-right: 72px;
+    }
+}

@@ -1,0 +1,37 @@
+.snapshot-tag {
+  background-color: #e3f7d5;
+  height: 24px;
+  border-radius: 20px;
+  padding: 0 14px;
+  margin: 5px 10px 5px 0;
+  display: inline-flex;
+  align-items: center;
+  
+  span {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #40701F;
+    line-height: 1.6rem;
+  }
+
+  &__icon {
+    border-radius: 50%;
+    background-color: #40701F;
+    width: 14px;
+    height: 14px;
+    text-align: center;
+    line-height: 14px;
+    margin-left: 6px;
+    cursor: pointer;
+
+    .icon {
+      color: #fff;
+      width: 10px;
+      height: 10px;
+    }
+
+    &:hover {
+      background-color: #4d8825;
+    }
+  }
+}

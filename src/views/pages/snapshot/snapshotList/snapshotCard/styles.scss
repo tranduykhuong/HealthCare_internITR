@@ -1,0 +1,132 @@
+@import '../../../../../styles/colors.scss';
+
+.snapshot-card {
+  padding: 10px;
+  background-color: #fff;
+  border: solid 1px #fff;
+  border-top: 1px solid #ccc;
+
+  .date {
+    display: flex;
+    justify-content: space-between;
+    margin: 4px 0;
+
+    &__time {
+      display: flex;
+
+      h2 {
+        font-size: 1.4rem;
+        font-weight: 500;
+        margin-left: 6px;
+      }
+    }
+
+    &__createTime {
+      display: flex;
+
+      h3 {
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-right: 6px;
+      }
+    }
+
+    &__icon {
+      width: 14px;
+      height: 14px;
+    }
+  }
+
+  .snapshot-chart {
+    border: 1px solid #D2D4D6;
+    border-radius: 8px;
+    position: relative;
+
+    &__star {
+      position: absolute;
+      right: 6px;
+      top: 6px;
+
+      .starIcon {
+        width: 17px;
+        height: 16px;
+        color: #FFC31F;
+      }
+    }
+
+    &__thumbnail {
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      height: 100px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+      }
+    }
+
+    &__detail {
+      height: 36px;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 16px;
+
+      h3 {
+        color: #696A6B;
+        font-size: 1.4rem;
+        font-weight: 700;
+        line-height: 36px;
+      }
+
+      .detail-heart-rate {
+        line-height: 36px;
+
+        strong {
+          font-size: 1.8rem;
+          font-weight: 700;
+          color: #EF2641;
+        }
+
+        span {
+          font-size: 1.2rem;
+          font-weight: 500;
+          margin-left: 6px;
+          color: #696A6B;
+        }
+
+        h3 {
+          color: #4e4e4e;
+          font-size: 1.7rem;
+          font-weight: 700;
+          line-height: 36px;
+        }
+      }
+    }
+  }
+
+  .snapshot-tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px 0;
+  }
+
+  .snapshot-description {
+    background-color: #F5F7FA;
+    font-size: 1.4rem;
+    font-weight: 100;
+    padding: 8px;
+    text-align: center;
+    color: #474748;
+  }
+
+  &:hover {
+    border-color: #89C15D;
+  }
+}
+
+.card-active {
+  background-color: #FDFBF1;
+  border-color: #89C15D;
+}

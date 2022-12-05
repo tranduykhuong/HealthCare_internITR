@@ -1,0 +1,46 @@
+.mycard {
+    background-color: #fff;
+    // min-width: 220px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+    padding: 1.6rem 2rem 1rem;
+    box-shadow: 0 0 8px rgba($color: #000000, $alpha: 0.1);
+
+    &__icon {
+        width: 34px;
+        height: 34px;
+        background-color: #E6E9EB;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 34px;
+    }
+
+    &__title {
+        font-size: 1.6rem;
+        font-weight: 500;
+        margin-top: 1rem;
+        color: #474748;
+    }
+
+    &__value-field {
+        display: flex;
+    }
+
+    &__value {
+        font-size: 3.6rem;
+        font-weight: 500;
+        color: #1E1F1F;
+        margin: 0;
+        line-height: 6rem;
+    }
+
+    &__unit {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #A0A1A3;
+        margin: auto 0 1rem 1rem;
+    }
+}

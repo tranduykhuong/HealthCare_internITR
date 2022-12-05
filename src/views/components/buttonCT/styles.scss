@@ -1,0 +1,110 @@
+@import '../.././../styles/colors.scss';
+
+.my-btn {
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+    border: none;
+    margin: 8px 0;
+    text-decoration: none;
+    background-color: transparent;
+    padding: 0.4rem;
+    position: relative;
+
+    &:hover {
+        opacity: 1;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    &__content {
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+
+    &__icon {
+        margin-right: 10px;
+    }
+
+    &__iconRight {
+        margin-left: 10px;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &__loading {
+        position: absolute;
+        left: 0;
+    }
+}
+
+.outlineBtn {
+    border: 1px solid $main-color;
+    color: $main-color;
+}
+
+.noneOutlineBtn {
+    background-color: #e1fcce;
+    color: #40701F;
+    border-radius: 4px;
+    opacity: 0.5;
+}
+
+.textDark {
+    color: #000;
+}
+
+.textBlue {
+    color: $facebook-color;
+}
+
+.pinkColor {
+    color: #EF2641;
+    border-color: #FFADB8;
+}
+
+.primary {
+    background-color: $main-color;
+    color: #fff;
+}
+
+.facebook {
+    border: 1px solid $facebook-color;
+    color: $facebook-color;
+}
+
+.google {
+    border: 1px solid #000;
+    color: rgba($color: #000000, $alpha: 0.54);
+}
+
+.apple {
+    border: 1px solid #000;
+    color: #000;
+}
+
+.disabled {
+    pointer-events: none;
+    // color: #A0A1A3;
+    opacity: 0.4;
+}
+
+.my-btn.large {
+    height: 48px;
+}
+
+.my-btn.small {
+    height: 30px;
+}
+
+.my-btn.active {
+    opacity: 1;
+    cursor: default;
+}

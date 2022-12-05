@@ -1,0 +1,246 @@
+@import '../../../styles/colors.scss';
+
+.summary {
+    padding: 0.2rem 2rem;
+    flex: 1;
+
+    &__heading {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.4rem;
+
+        h2 {
+            font-size: 2.2rem;
+            font-weight: 500;
+            color: #1E1F1F;
+        }
+
+        p {
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: #A0A1A3;
+        }
+    }
+
+    &__content {
+        background-color: #fff;
+        border-radius: 8px;
+        display: flex;
+
+        .content {
+            flex: 1;
+
+            .type-time {
+                width: 400px;
+                height: 40px;
+                background-color: #F0F2F5;
+                border-radius: 8px;
+                padding: 2px;
+                margin: 14px auto;
+                display: flex;
+                justify-content: space-between;
+
+
+                &__item {
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                    color: #696A6B;
+                    flex: 1;
+                    line-height: 36px;
+                    text-align: center;
+                    border-radius: 8px;
+                    position: relative;
+                    cursor: pointer;
+                }
+
+                .active {
+                    background-color: $main-color;
+                    color: #fff;
+                }
+            }
+
+            .time-option {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                user-select: none;
+
+                &__icon {
+                    width: 20px;
+                    height: 30px;
+                    color: $main-color;
+                    opacity: 0.8;
+
+                    &:hover {
+                        opacity: 1;
+                        cursor: pointer;
+                    }
+                }
+
+                &__time {
+                    font-size: 1.8rem;
+                    font-weight: 400;
+                    padding: 4px 16px;
+                    min-width: 286px;
+                    text-align: center;
+                }
+            }
+
+            .disabled {
+                color: #c2c2c2;
+                cursor: default;
+            }
+
+            .chart {
+                padding: 20px;
+                height: 260px;
+
+                &__card {
+                    height: 100%;
+                    position: relative;
+                }
+
+                &__legend {
+                    background-color: #F0F2F5;
+                    border-radius: 16px;
+                    width: 300px;
+                    height: 32px;
+                    padding: 0 4px;
+                    color: #EF2641;
+                    font-size: 2.2rem;
+                    font-weight: 500;
+                    align-items: center;
+                    display: flex;
+                    justify-content: space-around;
+                    position: absolute;
+                    left: 50px;
+                    top: -6px;
+
+                    .up,
+                    .down {
+                        display: flex;
+                        font-size: 2.2rem;
+                        font-weight: 500;
+                        align-items: center;
+
+                        p {
+                            margin: 0;
+                        }
+                    }
+
+                    .time {
+                        color: #696A6B;
+                    }
+                }
+
+                &__loading {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+
+            .rate1 {
+                display: flex;
+                min-width: 360px;
+                justify-content: space-around;
+                align-items: center;
+                text-align: center;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                margin: 0 20px 20px;
+
+                &__item {
+                    flex: 1;
+
+                    h3 {
+                        background-color: #F5F7FA;
+                        height: 24px;
+                        line-height: 24px;
+                        font-size: 1.4rem;
+                        font-weight: 400;
+                    }
+
+                    p {
+                        font-size: 2.5rem;
+                        font-weight: 700;
+                    }
+                }
+
+                .item-center {
+                    border-left: 1px solid #ddd;
+                    border-right: 1px solid #ddd;
+                }
+            }
+
+            .rate2 {
+                margin: 0 20px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                margin-bottom: 20px;
+
+                &__time {
+                    background-color: #F0F2EE;
+                    font-size: 1.4rem;
+                    font-weight: 100;
+                    color: #696A6B;
+                    padding: 2px 20px;
+                }
+
+                &__avg {
+                    padding: 10px 20px;
+                    display: flex;
+                    justify-content: space-between;
+                    
+                    h4 {
+                        font-size: 1.6rem;
+                        font-weight: 500;
+                        color: #474748;
+                        margin: 0;
+                        flex: 1;
+                        align-self: center;
+                    }
+
+                    p {
+                        font-size: 2.4rem;
+                        font-weight: 500;
+                        color: #EF2641;
+                        margin: 0;
+                    }
+
+                    span {
+                        font-size: 1.6rem;
+                        font-weight: 200;
+                        color: #EF2641;
+                        margin-left: 8px;
+                        margin-top: 6px;
+                        align-self: center;
+                    }
+                }
+            }
+
+            .aboutHr {
+                background-color: #F5F7FA;
+                margin: 4px 20px 20px;
+                padding: 10px;
+                border: 1px solid #E6E9EB;
+                border-radius: 4px;
+                color: rgb(239, 38, 65);
+
+                h3 {
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                    color: #1E1F1F;
+                }
+
+                p {
+                    font-size: 1.4rem;
+                    font-weight: 100;
+                    color: #696A6B;
+                }
+            }
+        }
+    }
+}

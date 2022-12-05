@@ -1,0 +1,26 @@
+/*!
+ * GenesisUI - Bootstrap 4 Admin Template
+ * @version v1.8.12
+ * @link https://genesisui.com
+ * Copyright (c) 2017 creativeLabs Łukasz Holeczek
+ * @license https://genesisui.com/license.html
+ */
+
+// Import Bootstrap source files
+@import "node_modules/bootstrap/scss/bootstrap";
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('../assets/fonts/CeraPro-Medium.ttf');
+}
+
+//tachyons styles
+@import "./lib/tachyons.min.css";
+
+* {
+    font-family: 'Cera Pro';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
